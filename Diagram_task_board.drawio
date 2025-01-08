@@ -4,62 +4,62 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PUGBERL6e0xd1W4qKlxt-6" value="&lt;font style=&quot;font-size: 43px;&quot;&gt;BODY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="PUGBERL6e0xd1W4qKlxt-6" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;BODY&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="80" y="160" width="710" height="850" as="geometry" />
         </mxCell>
-        <mxCell id="PUGBERL6e0xd1W4qKlxt-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="215" y="230" width="420" height="680" as="geometry" />
+        <mxCell id="PUGBERL6e0xd1W4qKlxt-2" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;MAIN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="203" y="190" width="487" height="740" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-3" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;TITLE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="240" width="310" height="30" as="geometry" />
+          <mxGeometry x="291.5" y="210" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-4" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;INPUT&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="280" width="310" height="30" as="geometry" />
+          <mxGeometry x="291.5" y="250" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-5" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;INPUT&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="320" width="310" height="30" as="geometry" />
+          <mxGeometry x="291.5" y="290" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;BUTTON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="370" width="310" height="30" as="geometry" />
+          <mxGeometry x="291.5" y="340" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-8" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;LIST&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="270" y="430" width="310" height="420" as="geometry" />
+          <mxGeometry x="290" y="390" width="310" height="420" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-9" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;ITEM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="310" y="440" width="240" height="160" as="geometry" />
+          <mxGeometry x="330" y="400" width="240" height="160" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;ITEM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="305" y="650" width="240" height="160" as="geometry" />
+          <mxGeometry x="325" y="620" width="240" height="160" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-11" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;BUTTON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="375" y="560" width="100" height="30" as="geometry" />
+          <mxGeometry x="395" y="520" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-12" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;BUTTON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="375" y="770" width="100" height="30" as="geometry" />
+          <mxGeometry x="395" y="740" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PUGBERL6e0xd1W4qKlxt-11" target="PUGBERL6e0xd1W4qKlxt-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;DATE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="355" y="520" width="70" height="20" as="geometry" />
+          <mxGeometry x="375" y="480" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;DATE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="355" y="730" width="70" height="20" as="geometry" />
+          <mxGeometry x="375" y="700" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-16" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;NAME&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="660" width="150" height="30" as="geometry" />
+          <mxGeometry x="370" y="630" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-17" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;NAME&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="450" width="160" height="30" as="geometry" />
+          <mxGeometry x="370" y="410" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-18" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;TAG&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="690" width="100" height="30" as="geometry" />
+          <mxGeometry x="370" y="660" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-19" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;TAG&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="480" width="100" height="30" as="geometry" />
+          <mxGeometry x="370" y="440" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PUGBERL6e0xd1W4qKlxt-21" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;COUNTER&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="820" width="150" height="30" as="geometry" />
+          <mxGeometry x="500" y="850" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
