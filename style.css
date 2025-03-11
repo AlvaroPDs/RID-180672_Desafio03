@@ -66,6 +66,9 @@ input{
 }
 .complete-btn{
     padding: 10px;
+    margin: 12px;
+    width: auto;
+    height: 2.5vw;
     outline: none;
     border: none;
     cursor: pointer;
@@ -75,11 +78,11 @@ input{
     padding-top: 4px;
 }
 
-.completed{
+.completed-line{
     text-decoration: line-through;
     color: #6464642f;
 }
 
-.completed-tag{
+.completed-check{
     color: #6464642f;
 }
