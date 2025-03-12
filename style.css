@@ -45,6 +45,9 @@ input{
     border-radius: 2px;
     outline: none;
 }
+p{
+    margin-left: 10px;
+}
 
 #add-task-btn{
     padding: 8px;
@@ -57,23 +60,51 @@ input{
     list-style-type: none;
     padding: 10px 35px;
 }
+#todo-info{
+    margin: 10px;
+
+}
 .todo{
     display: flex;
-    justify-content: space-between;
-    margin: 8px 0px 8px;
     border: 1px solid #6464642f;
     border-radius: 2px;
+    margin:8px 0px 0px;
+    justify-content: space-between;
 }
-.complete-btn{
-    padding: 10px;
-    margin: 12px;
-    width: auto;
-    height: 2.5vw;
+.trash-btn{
     outline: none;
     border: none;
     cursor: pointer;
+    margin: 0;
+    width: 3vw;
+}
+
+.complete-btn{
+    background: #fff;
+    padding: 18px;
+    margin: 12px 12px 12px 30px;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-image: url(images/unchecked.svg);
+    background-repeat: no-repeat;
+    background-size: cover;    
 
 }
+
+.checked{
+    background-image: url(images/checked.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    padding: 15px 15px 16px;
+    margin-top: 15px;
+    
+}
+
 .todo-item {
     padding-top: 4px;
 }

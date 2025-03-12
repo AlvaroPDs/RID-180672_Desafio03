@@ -20,6 +20,7 @@ date.value = 'Criado ' + newDate;
 //document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', buttonChecked);
+//todoList.addEventListener('click',)
 
 //Funções
 function addTodo(event){
@@ -31,18 +32,22 @@ function addTodo(event){
     todoDiv.classList.add('todo')
     // Cria a lista
     const newTodo = document.createElement('li');
-    newTodo.innerHTML=`<div style="flex-direction:column;"><p class="description">${todoInputDescription.value}</p><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div>`
+    newTodo.innerHTML=`<div id="todo-info"><p class="description">${todoInputDescription.value}</p><div style="flex-direction:row;display:flex;justify-content:space-between;"><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div></div>`
     newTodo.classList.add('todo-item')
     todoDiv.appendChild(newTodo);
-    // Adiciona ao local storage
+    //(CODIGO EXPERIMENTAL)
     //saveLocalTodos(todoInputDescription.value)
     //saveLocalTodos(todoInputTag.value)
     //saveLocalTodos(date.value)
     //Cria o botão de checado
     const completedButton = document.createElement('button')
-    completedButton.innerText = 'Concluir';
     completedButton.classList.add('complete-btn')
     todoDiv.appendChild(completedButton)
+    //Cria o botão de apagar task
+    const deleteTaskButton = document.createElement('button')
+    deleteTaskButton.classList.add('trash-btn')
+    deleteTaskButton.innerHTML='<i class="fa-solid fa-trash"></i>';
+    todoDiv.appendChild(deleteTaskButton)
     //Append a div para lista
     todoList.appendChild(todoDiv);
     //Faz os inputs ficarem vazios após o submit
@@ -57,11 +62,13 @@ function buttonChecked(e){
     if(item.classList[0] === 'complete-btn'){
         const todoDescription = item.parentElement.children[0].children[0].children[0];
         const todoTag =  item.parentElement.children[0].children[0].children[1];
-        const todoDate =  item.parentElement.children[0].children[0].children[2];
+        const todoDate =  item.parentElement.children[0].children[0].children[1].children[1];
+        const todoButtonCheck = item.parentElement.children[1];
         todoDescription.classList.toggle('completed-line');
         todoTag.classList.toggle('completed-check');
         todoDate.classList.toggle('completed-check');
-
+        todoButtonCheck.classList.toggle('checked')
+      
         
     }
     saveData()
@@ -79,7 +86,8 @@ function showData(){
     listContainer.innerHTML = localStorage.getItem('data')
 }
 showData()
-
+//localStorage.clear()
+//(CODIGO EXPERIMENTAL)
 //function saveLocalTodos(todo){
 //    let todos;
 //    //CHECA -- Tenho algo ai dentro?
