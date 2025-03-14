@@ -14,9 +14,10 @@ const day = d.getDate();
 const month = d.getMonth();
 const year = d.getFullYear();
 const newDate = day + '/' + month + '/' + year;
-date.value = 'Criado ' + newDate;
+date.value = 'Criado em ' + newDate;
 
 //Event Listeners
+//CODIGO EXPERIMENTAL
 //document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', buttonChecked);
@@ -24,15 +25,15 @@ todoList.addEventListener('click', buttonChecked);
 
 //Funções
 function addTodo(event){
-    //Previne a form de de dar submit
+    //Previne de ao dar submit ir pra outra pagina
     event.preventDefault();
 
-    //Todo Div
+    //Div da to do list
     const todoDiv = document.createElement('div')
     todoDiv.classList.add('todo')
     // Cria a lista
     const newTodo = document.createElement('li');
-    newTodo.innerHTML=`<div id="todo-info"><p class="description">${todoInputDescription.value}</p><div style="flex-direction:row;display:flex;justify-content:space-between;"><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div></div>`
+    newTodo.innerHTML=`<div id="todo-info"><textarea readonly type="output" class="description">${todoInputDescription.value}</textarea><div  class ="sub-info-container" style="flex-direction:row;display:flex;"><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div></div>`
     newTodo.classList.add('todo-item')
     todoDiv.appendChild(newTodo);
     //(CODIGO EXPERIMENTAL)
@@ -60,10 +61,12 @@ function addTodo(event){
 function buttonChecked(e){
     const item = e.target;
     if(item.classList[0] === 'complete-btn'){
+        // Esse codigo é experimental(não é o método mais simples mas funciona)
         const todoDescription = item.parentElement.children[0].children[0].children[0];
         const todoTag =  item.parentElement.children[0].children[0].children[1];
         const todoDate =  item.parentElement.children[0].children[0].children[1].children[1];
         const todoButtonCheck = item.parentElement.children[1];
+        // Trocas de classes
         todoDescription.classList.toggle('completed-line');
         todoTag.classList.toggle('completed-check');
         todoDate.classList.toggle('completed-check');
@@ -71,6 +74,8 @@ function buttonChecked(e){
       
         
     }
+
+    // Salva tudo no local storage
     saveData()
 
 }
@@ -85,7 +90,9 @@ function saveData(){
 function showData(){
     listContainer.innerHTML = localStorage.getItem('data')
 }
+// Mostra tudo que foi salvo  no local storage
 showData()
+
 //localStorage.clear()
 //(CODIGO EXPERIMENTAL)
 //function saveLocalTodos(todo){

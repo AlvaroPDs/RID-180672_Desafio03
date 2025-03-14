@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -19,9 +18,32 @@ form {
     
 }
 header, h1{
-    margin: 10px;
+    margin: 10px 10px 10px 1px;
+    color: #11175E;
 }
 
+input{
+    margin: 4px;
+    padding: 12px 4px;
+    border: 1px solid #6464645b;
+    border-radius: 6px;
+    outline: none;
+    width: 206px;
+}
+p{
+    margin-left: 10px;
+}
+textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    height: 25px;
+    padding: 10px 20px 0px 15px;
+    font-weight: 500;
+    color: #001747;
+}
 #wrapper {
     width: 100%;
     min-height: 100vh;
@@ -38,38 +60,32 @@ header, h1{
     border-radius: 8px;
 }
 
-input{
-    margin: 4px;
-    padding: 6px 2px;
-    border: 1px solid #6464645b;
-    border-radius: 2px;
-    outline: none;
-}
-p{
-    margin-left: 10px;
-}
+
 
 #add-task-btn{
-    padding: 8px;
+    padding: 13.5px 15px;
     border: none;
     outline: none;
+    background-color: #2D70FD;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 
 #todo-list{
     list-style-type: none;
-    padding: 10px 35px;
+    padding: 10px 30px 10px 10px;
+    width: 500px;
 }
-#todo-info{
-    margin: 10px;
 
-}
 .todo{
     display: flex;
     border: 1px solid #6464642f;
-    border-radius: 2px;
+    border-radius: 8px;
     margin:8px 0px 0px;
     justify-content: space-between;
+    
 }
 .trash-btn{
     outline: none;
@@ -82,7 +98,7 @@ p{
 .complete-btn{
     background: #fff;
     padding: 18px;
-    margin: 12px 12px 12px 30px;
+    margin: 30px 1px 12px 35px;
     width: 100px;
     height: 30px;
     outline: none;
@@ -100,8 +116,8 @@ p{
     background-size: cover;
     width: 20px;
     height: 20px;
-    padding: 15px 15px 16px;
-    margin-top: 15px;
+    padding: 15px 15px 16px 15px;
+    margin:30px 1px 1px 90px;
     
 }
 
@@ -111,9 +127,26 @@ p{
 
 .completed-line{
     text-decoration: line-through;
-    color: #6464642f;
+    color: #64646483;
 }
 
 .completed-check{
-    color: #6464642f;
+    color: #6464648c;
+}
+.description{
+    
+}
+.tag{
+    background-color: #fff;
+    border: 2px solid #7979791f;
+    color: #64646483;
+    border-radius: 8px;
+    padding: 0px 8px 3px 8px;
+}
+.sub-info-container{
+    margin: 15px 1px 15px 1px;
+}
+.date{
+    padding: 2.5px 2px;
+    color: #64646483;
 }
