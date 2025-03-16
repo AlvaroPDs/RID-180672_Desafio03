@@ -63,7 +63,7 @@ textarea{
 
 
 #add-task-btn{
-    padding: 13.5px 15px;
+    padding: 13px 15px;
     border: none;
     outline: none;
     background-color: #2D70FD;
@@ -92,7 +92,7 @@ textarea{
     border: none;
     cursor: pointer;
     margin: 0;
-    width: 3vw;
+    width: 40px;
 }
 
 .complete-btn{
@@ -133,9 +133,7 @@ textarea{
 .completed-check{
     color: #6464648c;
 }
-.description{
-    
-}
+
 .tag{
     background-color: #fff;
     border: 2px solid #7979791f;
@@ -145,8 +143,112 @@ textarea{
 }
 .sub-info-container{
     margin: 15px 1px 15px 1px;
+    flex-direction: row;
+    display: flex;
 }
 .date{
     padding: 2.5px 2px;
     color: #64646483;
+}
+@media only screen and (max-width:767px){
+    #div-wrapper{
+        padding-bottom: 10px;
+        padding-left:10px;
+        padding-top: 10px;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    header{
+        padding-right:50px;
+        width: 476px;
+    }
+    textarea{
+        font-size: 30px;
+        height: 50px;
+    }
+    #info-container{
+        display:block;
+        width: 206px;
+    }
+    #input-description{
+        margin: 10px;
+        font-size: 25px;
+        width: 500px;
+        padding: 25px;
+    }
+    #input-tag{
+        margin: 10px;
+        padding: 25px;
+        width: 500px;
+        font-size: 25px;
+    }
+    #add-task-btn{
+        width: 500px;
+        font-size: 25px;
+        margin: 10px;
+        padding: 25px;
+    }
+    #todo-info{
+        display: block;
+        width: 50px;
+        height: 150px;
+        padding-left: 30px;
+    }
+    #todo-list{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .todo-item{
+        width: 50px;
+    }
+    .todo{
+        display: block;
+        margin: 10px;
+        width: 500px;
+    }
+    .complete-btn{
+        margin:10px;
+        width: 208px;
+        padding: 35px;
+        height: 75px;
+    }
+    .trash-btn{
+        width: 100px;
+        height: 90px;
+        font-size: 30px;
+        background-color: #fff;
+    }
+    .checked{
+        width: 70px;
+        height: 71px;
+        padding:30px
+        
+    }
+    .sub-info-container{
+        display: block;
+        height: 100px;
+    }
+    .tag{
+        font-size: 20px;
+        width: 50px;
+        height: 30px;
+        margin-left: 25px;
+        padding: 0;
+    }
+    .date{
+        font-size: 20px;
+        width: 300px;
+        margin: 0;
+        padding-right:50px;
+        height: 50px;
+    }
+
 }

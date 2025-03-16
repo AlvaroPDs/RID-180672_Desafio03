@@ -33,7 +33,7 @@ function addTodo(event){
     todoDiv.classList.add('todo')
     // Cria a lista
     const newTodo = document.createElement('li');
-    newTodo.innerHTML=`<div id="todo-info"><textarea readonly type="output" class="description">${todoInputDescription.value}</textarea><div  class ="sub-info-container" style="flex-direction:row;display:flex;"><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div></div>`
+    newTodo.innerHTML=`<div id="todo-info"><textarea readonly type="output" class="description">${todoInputDescription.value}</textarea><div  class ="sub-info-container"><p class="tag">${todoInputTag.value}</p><p class="date">${date.value}</p></div></div>`
     newTodo.classList.add('todo-item')
     todoDiv.appendChild(newTodo);
     //(CODIGO EXPERIMENTAL)
@@ -60,6 +60,14 @@ function addTodo(event){
 // Função do botão que altera a classe dos valores criados
 function buttonChecked(e){
     const item = e.target;
+    //Deletar o item da lista
+    if(item.classList[0]=== 'trash-btn'){
+        const todo = item.parentElement;
+        todo.remove();
+    }
+
+
+    //Botão checado
     if(item.classList[0] === 'complete-btn'){
         // Esse codigo é experimental(não é o método mais simples mas funciona)
         const todoDescription = item.parentElement.children[0].children[0].children[0];
@@ -79,6 +87,12 @@ function buttonChecked(e){
     saveData()
 
 }
+//const invalidInput = (textinput) => {
+//    if(textinput.value === ''){
+//        textinput.setCustomValidity('Por favor preencha os dois campos!')
+//    }
+//    return true;
+//}
 
 // Local storage
 
