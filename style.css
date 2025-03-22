@@ -6,6 +6,16 @@
     font-style: normal;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #F5F9FF;
+
+}
+
 header{
     font-size: .8rem;
     padding-right: 100px;
@@ -21,6 +31,21 @@ header, h1{
     margin: 10px 10px 10px 1px;
     color: #11175E;
 }
+ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #c4c4c4;
+}
+
 
 input{
     margin: 4px;
@@ -39,25 +64,23 @@ textarea{
     outline: none;
     overflow: hidden;
     font-size: 16px;
-    height: 25px;
+    max-height: auto;
+    max-width: auto;
     padding: 10px 20px 0px 15px;
     font-weight: 500;
     color: #001747;
 }
 #wrapper {
+    display: block;
     width: 100%;
-    min-height: 100vh;
-    background: #F5F9FF;
-    padding: 10px;
+    max-width: 600px;
+    padding: 100px 0px;
 }
 #div-wrapper{
-    width: 100%;
-    max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
     border: 2px solid #6464642f;
     border-radius: 8px;
+    padding: 10px;
 }
 
 
@@ -75,9 +98,8 @@ textarea{
 
 #todo-list{
     list-style-type: none;
-    padding: 10px 30px 10px 10px;
-    width: 500px;
 }
+
 
 .todo{
     display: flex;
@@ -85,6 +107,7 @@ textarea{
     border-radius: 8px;
     margin:8px 0px 0px;
     justify-content: space-between;
+    width: 460px;
     
 }
 .trash-btn{
@@ -93,12 +116,13 @@ textarea{
     cursor: pointer;
     margin: 0;
     width: 40px;
+    background-color: #fff;
 }
 
 .complete-btn{
     background: #fff;
     padding: 18px;
-    margin: 30px 1px 12px 35px;
+    margin:25px;
     width: 100px;
     height: 30px;
     outline: none;
@@ -107,18 +131,16 @@ textarea{
     background-image: url(images/unchecked.svg);
     background-repeat: no-repeat;
     background-size: cover;    
-
 }
 
 .checked{
     background-image: url(images/checked.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20px;
-    height: 20px;
-    padding: 15px 15px 16px 15px;
-    margin:30px 1px 1px 90px;
-    
+    width: 100px;
+    height: 30px;
+    padding: 18px;
+    margin: 25px;    
 }
 
 .todo-item {
@@ -140,9 +162,10 @@ textarea{
     color: #64646483;
     border-radius: 8px;
     padding: 0px 8px 3px 8px;
+    
 }
 .sub-info-container{
-    margin: 15px 1px 15px 1px;
+    margin: 1px 1px 15px 1px;
     flex-direction: row;
     display: flex;
 }
@@ -150,105 +173,42 @@ textarea{
     padding: 2.5px 2px;
     color: #64646483;
 }
+
+
 @media only screen and (max-width:767px){
-    #div-wrapper{
-        padding-bottom: 10px;
-        padding-left:10px;
-        padding-top: 10px;
-        display: block;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 600px;
-    }
-    h1{
-        font-size: 50px;
+    
+    textarea{
+        resize: vertical;
     }
     header{
-        padding-right:50px;
-        width: 476px;
-    }
-    textarea{
-        font-size: 30px;
-        height: 50px;
-    }
-    #info-container{
-        display:block;
-        width: 206px;
-    }
-    #input-description{
-        margin: 10px;
-        font-size: 25px;
-        width: 500px;
-        padding: 25px;
-    }
-    #input-tag{
-        margin: 10px;
-        padding: 25px;
-        width: 500px;
-        font-size: 25px;
-    }
-    #add-task-btn{
-        width: 500px;
-        font-size: 25px;
-        margin: 10px;
-        padding: 25px;
-    }
-    #todo-info{
-        display: block;
-        width: 50px;
-        height: 150px;
-        padding-left: 30px;
-    }
-    #todo-list{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         padding: 0;
     }
-    .todo-item{
-        width: 50px;
+    form{
+        display: grid;
+    }
+
+    #wrapper{
+        max-width: 300px;
+
     }
     .todo{
-        display: block;
-        margin: 10px;
-        width: 500px;
+        display: grid;
     }
     .complete-btn{
-        margin:10px;
-        width: 208px;
-        padding: 35px;
-        height: 75px;
+        margin: 1px 80px;
     }
     .trash-btn{
-        width: 100px;
-        height: 90px;
-        font-size: 30px;
-        background-color: #fff;
+        margin: 10px 10px 10px 200px;
     }
-    .checked{
-        width: 70px;
-        height: 71px;
-        padding:30px
-        
+    .todo{
+        width: auto;
     }
     .sub-info-container{
-        display: block;
-        height: 100px;
+        display: grid;
     }
     .tag{
-        font-size: 20px;
-        width: 50px;
-        height: 30px;
-        margin-left: 25px;
         padding: 0;
-    }
-    .date{
-        font-size: 20px;
-        width: 300px;
-        margin: 0;
-        padding-right:50px;
-        height: 50px;
+        width: 80px;
     }
 
 }
